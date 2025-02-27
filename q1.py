@@ -1,12 +1,9 @@
-print("\n--- Number Type Conversion ---")
+numbers = [10, 12, 15, 35, 48, 52, 20, 25]
 
-user_float = float(input("Enter a decimal number: "))
-
-
-user_int = int(user_float)
-user_str = str(user_float)
-
-
-print(f"Original float: {user_float}")
-print(f"Converted to integer: {user_int}")
-print(f"Converted to string: \"{user_str}\"")
+for num in numbers:
+    if num > 50:
+        break
+    if num % 5 == 0:
+        continue
+    print(num)
+  

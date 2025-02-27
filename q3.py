@@ -1,9 +1,8 @@
-print("\n--- String Reversal ---")
-# Get string input
-text = input("Enter a string to reverse: ")
+sentence = input("Enter a sentence: ")
+words = sentence.split()
 
-# Reverse using string slicing
-reversed_text = text[::-1]
+for i in range(1, len(words), 2):
+    words[i] = words[i][::-1]
 
-# Display result
-print(f"Reversed string: {reversed_text}")
+newsentence = " ".join(words)
+print(newsentence)

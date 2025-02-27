@@ -1,11 +1,10 @@
+password = input("Enter your password: ")
 
-full_name = input("Enter your full name: ")
-
-name_parts = full_name.split()
-
-# Get first letter of first and last name
-first_initial = name_parts[0][0]
-last_initial = name_parts[-1][0]
-
-# Display initials in uppercase
-print(f"Your initials are: {first_initial.upper()}.{last_initial.upper()}")
+if len(password) < 6 or password.isalpha():
+    print("Password Strength: Weak")
+elif len(password) >= 6 and password.isalnum():
+    print("Password Strength: Moderate")
+elif len(password) >= 8 and any(char in "@#$%&" for char in password):
+    print("Password Strength: Strong")
+else:
+    print("Password Strength: Moderate")
