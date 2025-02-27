@@ -3,7 +3,7 @@ wordcount = {}
 
 for word in words:
     if word in wordcount:
-        word_ount[word] += 1
+        word_count[word] += 1
     else:
         wordcount[word] = 1
 
